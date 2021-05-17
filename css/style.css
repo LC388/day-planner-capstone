@@ -122,7 +122,7 @@ nav {
 
 /* ----------------------- main ----------------------- */
 
-main {
+.main {
   font-family: "Poiret One", cursive;
   color: white;
   display: flex;
@@ -401,3 +401,20 @@ input[type="submit"]:hover {
     text-align: center;
   }
 }
+
+
+
+
+/* --------------------     about page    -------------------- */
+
+.about-prompt {
+  font-family: "Poiret One", cursive;
+  color: white;
+  border: 3px solid whitesmoke;
+  border-radius: 20% 50% / 40% 10%;
+  margin: 7em 10em;
+  padding: 6em;
+  background-color: #8badc9da;
+  text-align: center;
+}
+
