@@ -466,7 +466,9 @@ input[type=submit]:hover {
 
 
 #login-box {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 5% auto;
   width: 600px;
   height: 400px;
@@ -476,7 +478,7 @@ input[type=submit]:hover {
 }
 
 .left {
-  position: absolute;
+  float: left;
   top: 0;
   left: 0;
   box-sizing: border-box;
@@ -543,8 +545,7 @@ input[type="submit"]:active {
 .or {
   font-family: "Poiret One", cursive;
   position: absolute;
-  top: 180px;
-  left: 280px;
+ 
   width: 40px;
   height: 40px;
   background: #DDD;
@@ -555,7 +556,7 @@ input[type="submit"]:active {
 }
 
 .right {
-  position: absolute;
+  float: right;
   top: 0;
   right: 0;
   box-sizing: border-box;
@@ -610,4 +611,17 @@ button.social-signin.twitter {
 
 button.social-signin.google {
   background: #DD4B39;
+}
+
+
+@media screen and (max-width: 650px) {
+#login-box{
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 75%;
+}
+
+.or {
+margin-top: 6em;
 }
