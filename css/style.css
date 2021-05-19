@@ -268,7 +268,7 @@ p {
   transform: rotate(45deg);
 }
 
-/*    ------------------ Forms login, sign-up ------------------      */
+/*  ------------------ Forms login, sign-up, contact ------------------  */
 
 .prompt-forms {
   width: 50%;
@@ -316,6 +316,11 @@ p {
   font-weight: bold;
   background-color: #9cbad2;
   cursor: pointer;
+  font-size: large;
+}
+
+label {
+  font-size: x-large;
 }
 
 /*    ------------------ error messages on forms------------------      */
