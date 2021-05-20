@@ -120,6 +120,38 @@ nav {
   }
 }
 
+
+/* ----------------------- footer ----------------------- */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 8vh;
+  background-color: #8badc9;
+  font-family: "Poiret One", cursive;
+  color: white;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons {
+filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+height: 35px;
+width: auto;
+justify-self: center;
+align-self: center;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  
+}
+
 /* ----------------------- main ----------------------- */
 
 .main {
@@ -149,6 +181,7 @@ body {
   border-radius: 50% 20% / 10% 40%;
   padding: 1em;
   text-align: center;
+  color: white;
 }
 
 h2 {
