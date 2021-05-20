@@ -34,12 +34,22 @@ nav {
   text-decoration: none;
   letter-spacing: 3px;
   font-size: 18px;
+  
 }
 
 .nav-links li {
   list-style: none;
+  
 }
 
+.nav-icon{
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  height: 25px;
+  width: auto;
+  padding-right: 8px;
+  padding-top: 8px;
+  
+}
 /* phone attributes of navbar to burger drop down*/
 
 .burger {
