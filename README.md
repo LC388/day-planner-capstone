@@ -60,8 +60,9 @@ The app's functionality includes:
 - Every User has the ability to plan a day in recipes suggestions or movies;
 
 ### 4. Technology
-
-- Front-End: HTML5, CSS3, JavaScript ES6, JQuery, API
+* Front-End: HTML5, CSS3, JavaScript ES6, React
+* Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
+* Development Environment: Heroku, DBeaver
 
 ### 5. Wireframes (to do now)
 
@@ -71,7 +72,31 @@ The app's functionality includes:
 Register Page
 ![Register Page](/github-images/wireframes/register-page-wireframe.png)
 
-### 6. API Documentation (to do later)
+### 6. Front-end Structure - React Components Map (to do later)
+* (Example) __Index.js__ (stateless)
+    * __App.js__ (stateful)
+        * __LandingPage.js__ (stateful) - gets the _"prop name"_ and the _"callback prop name"_ from the __App.js__
+            * __Login.js__ (stateful) -
+            * __Register.js__ (stateful) -
+        * __Navbar.js__ (stateless) -
+
+
+
+### 7. Back-end Structure - Business Objects (to do later)
+* Users (database table)
+    * id (auto-generated)
+    * username (email validation)
+    * password (at least 8 chars, at least one alpha and a special character validation)
+    * location (varChar 255)
+
+* Favorites (database table)
+    * id (auto-generated)
+    * user_id (foreign key connecting to users table)
+    * title (varChar 255)
+    * type (varChar 255) (recipes, restaurants)
+    * details (text)
+
+### 8. API Documentation (to do later)
 
 #### API Overview
 
@@ -86,7 +111,7 @@ Register Page
     │       └── /
 ```
 
-### 7. Screenshots (to do later)
+### 9. Screenshots (to do later)
 
 (Example) Landing Page
 :-------------------------:
@@ -94,8 +119,22 @@ Register Page
 Register Page
 ![Register Page](/github-images/screenshots/register-page-screenshot.png)
 
-### 8. Development Roadmap (to do later)
+### 10. Development Roadmap (to do later)
 
 This is v1.0 of the app, but future enhancements are expected to include:
 
 - (Example) add more functionality
+
+### 11. How to run it (done)
+Use command line to navigate into the project folder and run the following in terminal
+
+##### Local React scripts
+* To install the react project ===> npm install
+* To run react (on port 3000) ===> npm start
+* To run tests ===> npm run test
+
+##### Local Node scripts
+* To install the node project ===> npm install
+* To migrate the database ===> npm run migrate -- 1
+* To run Node server (on port 8000) ===> npm run dev
+* To run tests ===> npm run test
